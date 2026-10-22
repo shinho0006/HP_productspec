@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>신호시스템 제품사양검색 | SHINHO SYSTEM</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 상단 글로벌 네비게이션 헤더 -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="brand-area">
+                <img src="images/SHINHO_B.jpg" alt="SHINHO SYSTEM 로고" class="logo-img">
+                <div class="brand-text">
+                    <h1 class="brand-title">신호시스템 제품사양검색</h1>
+                    <span class="brand-subtitle">SHINHO SYSTEM Product Specification & Configurator</span>
+                </div>
+            </div>
+
+            <!-- 상단 검색바 -->
+            <div class="search-box">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="searchInput" placeholder="품목코드, 모델명, 규격 검색 (2자 이상 입력)..." autocomplete="off">
+                <button id="searchClearBtn" class="search-clear-btn" title="검색어 지우기">&times;</button>
+                <!-- 실시간 추천 및 자동완성 드롭다운 -->
+                <div class="search-dropdown" id="searchDropdown" style="display: none;"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 카테고리 필터 바 (중분류 & 소분류) -->
+    <nav class="category-nav">
+        <div class="category-nav-inner">
+            <div class="major-tabs" id="majorTabs">
+                <button class="major-tab active" data-major="ALL">전체 보기</button>
+                <!-- JS에서 중분류 탭 동적 렌더링 -->
+            </div>
+            <div class="sub-filter-row">
+                <span class="filter-label">소분류:</span>
+                <div class="sub-tags" id="subTags">
+                    <button class="sub-tag active" data-sub="ALL">전체</button>
+                    <!-- JS에서 소분류 태그 동적 렌더링 -->
+                </div>
+                <div class="filter-stats">
+                    검색 결과: <strong id="resultCount">0</strong>개 모델
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 레이아웃: 좌측 제품 리스트 / 우측 주문 사양 코드 및 가격 계산기 -->
+    <main class="main-container">
+        <!-- 좌측 제품 리스트 패널 -->
+        <aside class="sidebar-panel">
+            <div class="sidebar-header">
+                <span class="panel-title">제품 목록</span>
+                <span class="panel-desc">모델을 클릭하면 사양 및 가격을 선택할 수 있습니다.</span>
+            </div>
+            <div class="model-list" id="modelList">
+                <!-- JS에서 모델 카드 동적 렌더링 -->
+            </div>
+        </aside>
+
+        <!-- 우측 제품 사양 & 실시간 가격 계산기 패널 -->
+        <section class="detail-panel" id="detailPanel">
+            <!-- 선택 전 안내 화면 -->
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">🔍</div>
+                <h3>제품을 선택해 주세요</h3>
+                <p>좌측 제품 목록에서 모델을 클릭하시면<br>주문 사양 코드 선택 및 실시간 소비자가격 계산기를 이용하실 수 있습니다.</p>
+            </div>
+
+            <!-- 제품 상세 및 인터랙티브 사양 계산기 (선택 시 활성화) -->
+            <div class="product-configurator" id="configurator" style="display: none;">
+                <!-- 1. 핵심 대형 헤더: 모델명, 최종 주문사양코드, 소비자가격, 다운로드 링크 -->
+                <div class="hero-card">
+                    <div class="hero-left">
+                        <div class="category-breadcrumbs">
+                            <span class="crumb" id="heroMajor">중분류</span> &gt; 
+                            <span class="crumb" id="heroSub">소분류</span>
+                        </div>
+                        <h2 class="hero-model-name" id="heroModelName">SHN-ISO</h2>
+                        <p class="hero-desc" id="heroDesc">아이솔레이터 (신호 절연 변환기)</p>
+
+                        <!-- 맞춤 사양(Other) 실시간 제작 가능 여부 알림 배지 바 -->
+                        <div class="hero-spec-status-bar" id="heroSpecStatus" style="display: none;"></div>
+
+                        <!-- 제품 주요 기능 및 특징 소개 카드 (Catalog 제품소개 연동) -->
+                        <div class="hero-intro-card" id="heroIntroBox" style="display: none;"></div>
+                        
+                        <!-- 완성된 주문 사양 코드 뱃지 -->
+                        <div class="order-code-box">
+                            <span class="order-code-label">선택 주문 코드:</span>
+                            <span class="order-code-badge" id="heroOrderCode">SHN-ISO-___-___-___</span>
+                            <button class="btn-copy" id="btnCopyCode" title="주문코드 및 사양 복사">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                사양 복사
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 가격 및 액션 영역 -->
+                    <div class="hero-right">
+                        <div class="price-container">
+                            <div class="price-label-row">
+                                <span class="price-title">소비자가격 (VAT 별도)</span>
+                            </div>
+                            <div class="price-main">
+                                <span class="price-num" id="heroPrice">0</span>
+                                <span class="price-unit">원</span>
+                            </div>
+                            <div class="price-breakdown" id="priceBreakdown">
+                                기본가 <span id="basePriceText">0</span>원 + 옵션 <span id="optPriceText">0</span>원
+                            </div>
+                            <div class="price-spec-notice" id="priceSpecNotice" style="display: none;"></div>
+                        </div>
+
+                        <div class="hero-actions">
+                            <!-- 1. 카탈로그 (PDF) 다운로드 링크 (설명서 위쪽) -->
+                            <a href="#" target="_blank" class="action-btn btn-catalog" id="btnCatalog">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>카탈로그 (PDF)</span>
+                            </a>
+
+                            <!-- 2. 제품 설명서 (PDF) 다운로드 링크 -->
+                            <a href="#" target="_blank" class="action-btn btn-manual" id="btnManual">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>제품 설명서 (PDF)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. 주문 사양 코드 구성표 선택기 (CodeSelect & 실시간 계산) -->
+                <div class="section-card">
+                    <div class="section-card-header">
+                        <div class="header-with-badge">
+                            <h3 class="section-title">주문 사양 코드 선택</h3>
+                            <span class="badge-accent">옵션 선택 시 실시간 가격 반영</span>
+                        </div>
+                        <button class="btn-text-reset" id="btnResetOptions">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 4v6h-6"></path>
+                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                            </svg>
+                            선택 초기화
+                        </button>
+                    </div>
+
+                    <div class="code-select-groups" id="codeSelectGroups">
+                        <!-- JS에서 사양 카테고리별(입력, 출력, 전원, 옵션 등) 라디오 버튼 그룹 생성 -->
+                    </div>
+                </div>
+
+                <!-- 3. 상세 제품 기술 사양 (Specifications) -->
+                <div class="section-card" id="techSpecCard">
+                    <div class="section-card-header">
+                        <h3 class="section-title">상세 제품 사양 (Technical Specifications)</h3>
+                    </div>
+                    <div class="tech-spec-grid" id="techSpecGrid">
+                        <!-- JS에서 상세 사양 테이블 렌더링 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 하단 푸터 -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="copyright">&copy; SHINHO SYSTEM Co., Ltd. All rights reserved. | 신호시스템 공식 제품사양 시스템</p>
+            <p class="footer-note">* 본 웹페이지에 표기된 소비자가격은 부가세(VAT) 별도이며, 사양에 따라 변동될 수 있습니다.</p>
+        </div>
+    </footer>
+
+    <!-- 알림 토스트 메시지 -->
+    <div id="toast" class="toast"></div>
+
+    <!-- 순수 정적 데이터 로드: GitHub Pages 및 file:/// 완벽 자립 실행 -->
+    <script src="product_data.js?v=20261021110031"></script>
+    <script src="app.js?v=20261021110031"></script>
+</body>
+</html>

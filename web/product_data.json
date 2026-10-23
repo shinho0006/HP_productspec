@@ -72,8 +72,11 @@
       "SHN-DFC",
       "SHN-PDB",
       "SHN-8PDB",
-      "SHN-500",
-      "SHN-600",
+      "SHN-510",
+      "SHN-520",
+      "SHN-620",
+      "SHN-640",
+      "SHN-650",
       "SHN-700"
     ],
     "SHN": [
@@ -101,8 +104,11 @@
       "SHN-DFC",
       "SHN-PDB",
       "SHN-8PDB",
-      "SHN-500",
-      "SHN-600",
+      "SHN-510",
+      "SHN-520",
+      "SHN-620",
+      "SHN-640",
+      "SHN-650",
       "SHN-700",
       "SHN-1100",
       "SHN-1300",
@@ -366,60 +372,64 @@
       "price_consumer": 165000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "INPUT",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "C"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
@@ -429,19 +439,19 @@
         },
         {
           "type": "spec",
-          "name": "POWER",
+          "name": "13",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -469,7 +479,7 @@
       "available_specs": [
         {
           "type": "INPUT",
-          "unit": "㎷",
+          "unit": "mV",
           "zero_low": -1000.0,
           "zero_high": 1000.0,
           "span_low": -1000.0,
@@ -478,29 +488,29 @@
         {
           "type": "INPUT",
           "unit": "V",
-          "zero_low": -400.0,
-          "zero_high": 400.0,
-          "span_low": -400.0,
-          "span_high": 400.0
+          "zero_low": -100.0,
+          "zero_high": 100.0,
+          "span_low": -100.0,
+          "span_high": 100.0
         },
         {
           "type": "INPUT",
-          "unit": "㎃",
+          "unit": "mA",
           "zero_low": 0.0,
           "zero_high": 60.0,
           "span_low": 0.0,
           "span_high": 60.0
         },
         {
-          "type": "OUTPUT1",
-          "unit": "㎷",
+          "type": "OUT1",
+          "unit": "mV",
           "zero_low": 0.0,
           "zero_high": 100.0,
           "span_low": 40.0,
           "span_high": 100.0
         },
         {
-          "type": "OUTPUT1",
+          "type": "OUT1",
           "unit": "V",
           "zero_low": -10.0,
           "zero_high": 10.0,
@@ -508,15 +518,15 @@
           "span_high": 10.0
         },
         {
-          "type": "OUTPUT1",
-          "unit": "㎃",
+          "type": "OUT1",
+          "unit": "mA",
           "zero_low": 0.0,
           "zero_high": 20.0,
           "span_low": 0.0,
           "span_high": 20.0
         },
         {
-          "type": "OUTPUT1",
+          "type": "OUT1",
           "unit": "2-Wire",
           "zero_low": 4.0,
           "zero_high": 4.0,
@@ -524,15 +534,15 @@
           "span_high": 20.0
         },
         {
-          "type": "OUTPUT2",
-          "unit": "㎷",
+          "type": "OUT2",
+          "unit": "mV",
           "zero_low": 0.0,
           "zero_high": 100.0,
           "span_low": 40.0,
           "span_high": 100.0
         },
         {
-          "type": "OUTPUT2",
+          "type": "OUT2",
           "unit": "V",
           "zero_low": -10.0,
           "zero_high": 10.0,
@@ -540,15 +550,15 @@
           "span_high": 10.0
         },
         {
-          "type": "OUTPUT2",
-          "unit": "㎃",
+          "type": "OUT2",
+          "unit": "mA",
           "zero_low": 0.0,
           "zero_high": 20.0,
           "span_low": 0.0,
           "span_high": 20.0
         },
         {
-          "type": "OUTPUT2",
+          "type": "OUT2",
           "unit": "2-Wire",
           "zero_low": 4.0,
           "zero_high": 4.0,
@@ -572,72 +582,76 @@
       "price_consumer": 165000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "INPUT",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "INPUT",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "INPUT",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "I"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "I"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "I"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
@@ -647,19 +661,19 @@
         },
         {
           "type": "spec",
-          "name": "POWER",
+          "name": "13",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -687,7 +701,7 @@
       "available_specs": [
         {
           "type": "INPUT",
-          "unit": "㎷",
+          "unit": "mV",
           "zero_low": -1000.0,
           "zero_high": 1000.0,
           "span_low": -1000.0,
@@ -696,29 +710,29 @@
         {
           "type": "INPUT",
           "unit": "V",
-          "zero_low": -400.0,
-          "zero_high": 400.0,
-          "span_low": -400.0,
-          "span_high": 400.0
+          "zero_low": -100.0,
+          "zero_high": 100.0,
+          "span_low": -100.0,
+          "span_high": 100.0
         },
         {
           "type": "INPUT",
-          "unit": "㎃",
+          "unit": "mA",
           "zero_low": 0.0,
           "zero_high": 60.0,
           "span_low": 0.0,
           "span_high": 60.0
         },
         {
-          "type": "OUTPUT",
-          "unit": "㎷",
+          "type": "OUT",
+          "unit": "mV",
           "zero_low": 0.0,
           "zero_high": 100.0,
           "span_low": 40.0,
           "span_high": 100.0
         },
         {
-          "type": "OUTPUT",
+          "type": "OUT",
           "unit": "V",
           "zero_low": -10.0,
           "zero_high": 10.0,
@@ -726,8 +740,8 @@
           "span_high": 10.0
         },
         {
-          "type": "OUTPUT",
-          "unit": "㎃",
+          "type": "OUT",
+          "unit": "mA",
           "zero_low": 0.0,
           "zero_high": 20.0,
           "span_low": 0.0,
@@ -750,78 +764,86 @@
       "price_consumer": 165000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "B",
-              "desc": "4~20mA(DC24V)"
+              "code": "INPUT",
+              "desc": "B"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "I"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "I"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "13",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -850,22 +872,22 @@
       "available_specs": [
         {
           "type": "INPUT",
-          "unit": "㎃(DC24V)",
+          "unit": "mA(DC24V)",
           "zero_low": 4.0,
           "zero_high": 4.0,
           "span_low": 20.0,
           "span_high": 20.0
         },
         {
-          "type": "OUTPUT",
-          "unit": "㎷",
+          "type": "OUT",
+          "unit": "mV",
           "zero_low": 0.0,
           "zero_high": 100.0,
           "span_low": 40.0,
           "span_high": 100.0
         },
         {
-          "type": "OUTPUT",
+          "type": "OUT",
           "unit": "V",
           "zero_low": -10.0,
           "zero_high": 10.0,
@@ -873,8 +895,8 @@
           "span_high": 10.0
         },
         {
-          "type": "OUTPUT",
-          "unit": "㎃",
+          "type": "OUT",
+          "unit": "mA",
           "zero_low": 0.0,
           "zero_high": 20.0,
           "span_low": 0.0,
@@ -897,82 +919,90 @@
       "price_consumer": 165000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "B",
-              "desc": "PT100Ω"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "E",
-              "desc": "PT1000Ω"
+              "code": "INPUT",
+              "desc": "E"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "I"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "I"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "13",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -1014,15 +1044,15 @@
           "span_high": 500.0
         },
         {
-          "type": "OUTPUT",
-          "unit": "㎷",
+          "type": "OUT",
+          "unit": "mV",
           "zero_low": 0.0,
           "zero_high": 100.0,
           "span_low": 40.0,
           "span_high": 100.0
         },
         {
-          "type": "OUTPUT",
+          "type": "OUT",
           "unit": "V",
           "zero_low": -10.0,
           "zero_high": 10.0,
@@ -1030,8 +1060,8 @@
           "span_high": 10.0
         },
         {
-          "type": "OUTPUT",
-          "unit": "㎃",
+          "type": "OUT",
+          "unit": "mA",
           "zero_low": 0.0,
           "zero_high": 20.0,
           "span_low": 0.0,
@@ -1054,86 +1084,94 @@
       "price_consumer": 165000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "B",
-              "desc": "0~135Ω"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "0~1㏀"
+              "code": "INPUT",
+              "desc": "C"
             },
             {
-              "code": "E",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "E"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "I"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "I"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "13",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -1168,22 +1206,22 @@
         },
         {
           "type": "INPUT",
-          "unit": "㏀",
+          "unit": "kΩ",
           "zero_low": 0.0,
           "zero_high": 10.0,
           "span_low": 0.0,
           "span_high": 10.0
         },
         {
-          "type": "OUTPUT",
-          "unit": "㎷",
+          "type": "OUT",
+          "unit": "mV",
           "zero_low": 0.0,
           "zero_high": 100.0,
           "span_low": 40.0,
           "span_high": 100.0
         },
         {
-          "type": "OUTPUT",
+          "type": "OUT",
           "unit": "V",
           "zero_low": -10.0,
           "zero_high": 10.0,
@@ -1191,8 +1229,8 @@
           "span_high": 10.0
         },
         {
-          "type": "OUTPUT",
-          "unit": "㎃",
+          "type": "OUT",
+          "unit": "mA",
           "zero_low": 0.0,
           "zero_high": 20.0,
           "span_low": 0.0,
@@ -1215,86 +1253,94 @@
       "price_consumer": 180000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "A",
-              "desc": "0~1A"
+              "code": "INPUT",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "0~5A"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "I"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "I"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "13",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -1456,86 +1502,94 @@
       "price_consumer": 180000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "G",
-              "desc": "0~110V AC"
+              "code": "INPUT",
+              "desc": "G"
             },
             {
-              "code": "H",
-              "desc": "0~220V AC"
+              "code": "INPUT",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "I"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "I"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "H"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "I"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "13",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -1697,78 +1751,86 @@
       "price_consumer": 165000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "INPUT",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "5~1V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "20~4mA"
+              "code": "OUT1",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "5~1V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "20~4mA"
+              "code": "OUT2",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "C"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "13",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -1915,74 +1977,82 @@
       "price_consumer": 180000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "B",
-              "desc": "√4~20mA"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "√4~20mA(DC24V)"
+              "code": "INPUT",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "C"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "13",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -2121,78 +2191,86 @@
       "price_consumer": 180000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "INPUT",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "C"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "13",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -2339,78 +2417,86 @@
       "price_consumer": 180000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "INPUT",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "C"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "13",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -2557,82 +2643,78 @@
       "price_consumer": 180000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "D",
-              "desc": "2mV/V"
+              "code": "INPUT",
+              "desc": "D"
             },
             {
-              "code": "H",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "H"
+            },
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "D"
+            },
+            {
+              "code": "OUT1",
+              "desc": "H"
+            },
+            {
+              "code": "OUT1",
+              "desc": "I"
+            },
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "D"
+            },
+            {
+              "code": "OUT2",
+              "desc": "H"
+            },
+            {
+              "code": "OUT2",
+              "desc": "I"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
-          "type": "spec",
-          "name": "OUT1",
-          "options": [
-            {
-              "code": "A",
-              "desc": "0~10V"
-            },
-            {
-              "code": "D",
-              "desc": "1~5V"
-            },
-            {
-              "code": "H",
-              "desc": "4~20mA"
-            },
-            {
-              "code": "I",
-              "desc": "Other"
-            }
-          ]
+          "type": "delimiter",
+          "char": "-"
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "13",
           "options": [
             {
-              "code": "A",
-              "desc": "0~10V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "D",
-              "desc": "1~5V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "H",
-              "desc": "4~20mA"
-            },
-            {
-              "code": "I",
-              "desc": "Other"
-            },
-            {
-              "code": "O",
-              "desc": "None"
-            }
-          ]
-        },
-        {
-          "type": "spec",
-          "name": "POWER",
-          "options": [
-            {
-              "code": "V",
-              "desc": "AC110V"
-            },
-            {
-              "code": "W",
-              "desc": "AC220V"
-            },
-            {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -2786,92 +2868,100 @@
       "price_consumer": 180000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "SELECTING",
+          "name": "9",
           "options": [
             {
-              "code": "A",
-              "desc": "High Limit"
+              "code": "SELECTING",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "Low Limit"
+              "code": "SELECTING",
+              "desc": "B"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "INPUT",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "INPUT",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "12",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "C"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "14",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -3034,96 +3124,104 @@
       "price_consumer": 185000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "ARITHMETIC",
+          "name": "9",
           "options": [
             {
-              "code": "1",
-              "desc": "(A+B)/2"
+              "code": "ARITHMETIC",
+              "desc": "1"
             },
             {
-              "code": "3",
-              "desc": "(A-B)+K"
+              "code": "ARITHMETIC",
+              "desc": "3"
             },
             {
-              "code": "4",
-              "desc": "A-B"
+              "code": "ARITHMETIC",
+              "desc": "4"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "INPUT",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "INPUT",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "12",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT2",
+              "desc": "C"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "14",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -3294,52 +3392,60 @@
       "price_consumer": 185000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "INPUT",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "INPUT",
+              "desc": "C"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "Other"
+              "code": "OUT1",
+              "desc": "C"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "12",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             }
           ]
         }
@@ -3446,80 +3552,88 @@
       "price_consumer": 185000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "SELECTING",
+          "name": "9",
           "options": [
             {
-              "code": "A",
-              "desc": "High Limit"
+              "code": "SELECTING",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "Low Limit"
+              "code": "SELECTING",
+              "desc": "B"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "INPUT",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "INPUT",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "INPUT",
+              "desc": "B"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "11",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT1",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT1",
+              "desc": "B"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT2",
+          "name": "12",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT2",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT2",
+              "desc": "B"
             },
             {
-              "code": "O",
-              "desc": "None"
+              "code": "OUT2",
+              "desc": "O"
             }
           ]
         },
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "POWER",
+          "name": "14",
           "options": [
             {
-              "code": "V",
-              "desc": "AC110V"
+              "code": "POWER",
+              "desc": "V"
             },
             {
-              "code": "W",
-              "desc": "AC220V"
+              "code": "POWER",
+              "desc": "W"
             },
             {
-              "code": "Y",
-              "desc": "DC24V"
+              "code": "POWER",
+              "desc": "Y"
             }
           ]
         }
@@ -3656,7 +3770,68 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/S-UNIT_02.pdf",
       "catalog_url": "",
       "price_consumer": 215000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "13",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            },
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC/DC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 3.5 VA | DC : ≤100 mA",
@@ -3691,7 +3866,58 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 170000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            },
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC/DC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 3.5 VA | DC : ≤100 mA",
@@ -3725,7 +3951,122 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/S-UNIT_03.pdf",
       "catalog_url": "",
       "price_consumer": 185000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "SOURCE",
+              "desc": "A"
+            },
+            {
+              "code": "SOURCE",
+              "desc": "B"
+            },
+            {
+              "code": "SOURCE",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            },
+            {
+              "code": "INPUT",
+              "desc": "C"
+            },
+            {
+              "code": "INPUT",
+              "desc": "D"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            },
+            {
+              "code": "OUT1",
+              "desc": "H"
+            },
+            {
+              "code": "OUT1",
+              "desc": "I"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "H"
+            },
+            {
+              "code": "OUT2",
+              "desc": "I"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "14",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            },
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC/DC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 3.5 VA | DC : ≤100 mA",
@@ -3760,7 +4101,126 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/S-UNIT_03.pdf",
       "catalog_url": "",
       "price_consumer": 185000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "SOURCE",
+              "desc": "A"
+            },
+            {
+              "code": "SOURCE",
+              "desc": "B"
+            },
+            {
+              "code": "SOURCE",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            },
+            {
+              "code": "INPUT",
+              "desc": "C"
+            },
+            {
+              "code": "INPUT",
+              "desc": "D"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            },
+            {
+              "code": "OUT1",
+              "desc": "C"
+            },
+            {
+              "code": "OUT1",
+              "desc": "D"
+            },
+            {
+              "code": "OUT1",
+              "desc": "E"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "C"
+            },
+            {
+              "code": "OUT2",
+              "desc": "D"
+            },
+            {
+              "code": "OUT2",
+              "desc": "E"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "14",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 4.0 VA",
@@ -3790,7 +4250,126 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/S-UNIT_03.pdf",
       "catalog_url": "",
       "price_consumer": 185000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "SOURCE",
+              "desc": "A"
+            },
+            {
+              "code": "SOURCE",
+              "desc": "B"
+            },
+            {
+              "code": "SOURCE",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            },
+            {
+              "code": "INPUT",
+              "desc": "C"
+            },
+            {
+              "code": "INPUT",
+              "desc": "D"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            },
+            {
+              "code": "OUT1",
+              "desc": "C"
+            },
+            {
+              "code": "OUT1",
+              "desc": "D"
+            },
+            {
+              "code": "OUT1",
+              "desc": "E"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "C"
+            },
+            {
+              "code": "OUT2",
+              "desc": "D"
+            },
+            {
+              "code": "OUT2",
+              "desc": "E"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "14",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 4.0 VA",
@@ -3820,7 +4399,92 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/S-UNIT_03.pdf",
       "catalog_url": "",
       "price_consumer": 185000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "D"
+            },
+            {
+              "code": "INPUT",
+              "desc": "H"
+            },
+            {
+              "code": "INPUT",
+              "desc": "I"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            },
+            {
+              "code": "OUT1",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "C"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "13",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 3.5 VA",
@@ -3856,54 +4520,84 @@
       "price_consumer": 70000,
       "code_steps": [
         {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
           "type": "spec",
-          "name": "INPUT",
+          "name": "9",
           "options": [
             {
-              "code": "B",
-              "desc": "4~20mA(DC24V)"
+              "code": "INPUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "200mA"
+              "code": "INPUT",
+              "desc": "C"
             },
             {
-              "code": "E",
-              "desc": "4~20mA(DC24V)x2P"
+              "code": "INPUT",
+              "desc": "E"
             }
           ]
         },
         {
           "type": "spec",
-          "name": "OUT1",
+          "name": "10",
           "options": [
             {
-              "code": "A",
-              "desc": "1~5V"
+              "code": "OUT",
+              "desc": "A"
             },
             {
-              "code": "B",
-              "desc": "4~20mA"
+              "code": "OUT",
+              "desc": "B"
             },
             {
-              "code": "C",
-              "desc": "1~5Vx2P"
+              "code": "OUT",
+              "desc": "C"
             },
             {
-              "code": "D",
-              "desc": "4~20mAx2P"
+              "code": "OUT",
+              "desc": "D"
             },
             {
-              "code": "F",
-              "desc": "DC24V"
+              "code": "OUT",
+              "desc": "E"
             },
             {
-              "code": "H",
-              "desc": "DC24Vx2P"
+              "code": "OUT",
+              "desc": "F"
             },
             {
-              "code": "I",
-              "desc": "Other"
+              "code": "OUT",
+              "desc": "G"
+            },
+            {
+              "code": "OUT",
+              "desc": "H"
+            },
+            {
+              "code": "OUT",
+              "desc": "I"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
             }
           ]
         }
@@ -4018,7 +4712,26 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SHN-8PDB.pdf",
       "catalog_url": "",
       "price_consumer": 215000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "DC 정격의 ±10 % (50~60 Hz)",
         "정확도": "±1.0 %",
@@ -4033,20 +4746,67 @@
         "설치방식": "Wall mounting"
       }
     },
-    "SHN-500": {
-      "name": "SHN-500",
+    "SHN-510": {
+      "name": "SHN-510",
       "mid_name": "CONVERTER",
       "sub_name": "SHN",
       "desc": "Programable Converter",
       "intro": "0",
-      "spec": "1P,2P",
+      "spec": "1P",
       "power": "AC,DC",
       "option": "No,RS-485",
       "rep_code": "",
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SHN-500.pdf",
       "catalog_url": "",
-      "price_consumer": 0,
-      "code_steps": [],
+      "price_consumer": 190000,
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            },
+            {
+              "code": "POWER",
+              "desc": "2"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC 95~250 V (50~60 Hz) | DC 24 V",
         "소비전력": "AC : 약 4.0 VA | DC : ≤80 mA",
@@ -4068,20 +4828,329 @@
         "설치방식": "Wall / DIN Rail mounting"
       }
     },
-    "SHN-600": {
-      "name": "SHN-600",
+    "SHN-520": {
+      "name": "SHN-520",
       "mid_name": "CONVERTER",
       "sub_name": "SHN",
       "desc": "Programable Converter",
       "intro": "0",
-      "spec": "2A,4A",
+      "spec": "2P",
+      "power": "AC,DC",
+      "option": "No,RS-485",
+      "rep_code": "",
+      "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SHN-500.pdf",
+      "catalog_url": "",
+      "price_consumer": 220000,
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "13",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            },
+            {
+              "code": "POWER",
+              "desc": "2"
+            }
+          ]
+        }
+      ],
+      "specs": {
+        "전원전압": "AC 95~250 V (50~60 Hz) | DC 24 V",
+        "소비전력": "AC : 약 4.0 VA | DC : ≤80 mA",
+        "센서 전원": "DC 24 V, 30 mA",
+        "정확도": "±0.2 %",
+        "선형성": "±0.02 %",
+        "온도계수": "±0.015 %/℃ (Ref. 25 ℃)",
+        "응답시간": "≤2.5 s (0→90%)",
+        "디스플레이": "4 digit, 7-segment (Red)",
+        "샘플링 주기": "mA, V : 200ms | PT, T/C : 400ms",
+        "입력 임피던스": "mA : 250Ω | V : 400kΩ | PT, T/C : 1MΩ",
+        "절연저항": "≥100 MΩ (DC 500 V)",
+        "내전압": "AC 2,000 V, 1 min (GND : AC 1,000 V)",
+        "사용 온/습도": "0~60 ℃ / ≤90 % RH (비응축)",
+        "보관 온/습도": "-20~80 ℃ / ≤95 % RH (비응축)",
+        "크기(WxHxD)": "50 × 85 × 133 mm",
+        "무게": "약 400 g",
+        "외관재질": "난연 ABS",
+        "설치방식": "Wall / DIN Rail mounting"
+      }
+    },
+    "SHN-620": {
+      "name": "SHN-620",
+      "mid_name": "CONVERTER",
+      "sub_name": "SHN",
+      "desc": "Programable Converter",
+      "intro": "0",
+      "spec": "2A",
       "power": "AC,DC",
       "option": "",
       "rep_code": "",
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SHN-600.pdf",
       "catalog_url": "",
-      "price_consumer": 0,
-      "code_steps": [],
+      "price_consumer": 200000,
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "6",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "2"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            },
+            {
+              "code": "POWER",
+              "desc": "2"
+            }
+          ]
+        }
+      ],
+      "specs": {
+        "전원전압": "AC 95~250 V (50~60 Hz) | DC 24 V",
+        "소비전력": "AC : 약 4.0 VA | DC : ≤80 mA",
+        "센서 전원": "DC 24 V, 30 mA",
+        "정확도": "±0.2 %",
+        "선형성": "±0.02 %",
+        "온도계수": "±0.015 %/℃ (Ref. 25 ℃)",
+        "응답시간": "≤2.5 s (0→90%)",
+        "디스플레이": "4 digit, 7-segment (Green, 650 : Red)",
+        "샘플링 주기": "mA, V : 200ms | PT, T/C : 400ms",
+        "입력 임피던스": "mA : 250Ω | V : 400kΩ | PT, T/C : 1MΩ",
+        "절연저항": "≥100 MΩ (DC 500 V)",
+        "내전압": "AC 2,000 V, 1 min (GND : AC 1,000 V)",
+        "사용 온/습도": "0~60 ℃ / ≤90 % RH (비응축)",
+        "보관 온/습도": "-20~80 ℃ / ≤95 % RH (비응축)",
+        "크기(WxHxD)": "50 × 85 × 133 mm",
+        "무게": "약 400 g",
+        "외관재질": "난연 ABS",
+        "설치방식": "Wall / DIN Rail mounting"
+      }
+    },
+    "SHN-640": {
+      "name": "SHN-640",
+      "mid_name": "CONVERTER",
+      "sub_name": "SHN",
+      "desc": "Programable Converter",
+      "intro": "0",
+      "spec": "4A",
+      "power": "AC,DC",
+      "option": "",
+      "rep_code": "",
+      "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SHN-600.pdf",
+      "catalog_url": "",
+      "price_consumer": 240000,
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "6",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "4"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            },
+            {
+              "code": "POWER",
+              "desc": "2"
+            }
+          ]
+        }
+      ],
+      "specs": {
+        "전원전압": "AC 95~250 V (50~60 Hz) | DC 24 V",
+        "소비전력": "AC : 약 4.0 VA | DC : ≤80 mA",
+        "센서 전원": "DC 24 V, 30 mA",
+        "정확도": "±0.2 %",
+        "선형성": "±0.02 %",
+        "온도계수": "±0.015 %/℃ (Ref. 25 ℃)",
+        "응답시간": "≤2.5 s (0→90%)",
+        "디스플레이": "4 digit, 7-segment (Green, 650 : Red)",
+        "샘플링 주기": "mA, V : 200ms | PT, T/C : 400ms",
+        "입력 임피던스": "mA : 250Ω | V : 400kΩ | PT, T/C : 1MΩ",
+        "절연저항": "≥100 MΩ (DC 500 V)",
+        "내전압": "AC 2,000 V, 1 min (GND : AC 1,000 V)",
+        "사용 온/습도": "0~60 ℃ / ≤90 % RH (비응축)",
+        "보관 온/습도": "-20~80 ℃ / ≤95 % RH (비응축)",
+        "크기(WxHxD)": "50 × 85 × 133 mm",
+        "무게": "약 400 g",
+        "외관재질": "난연 ABS",
+        "설치방식": "Wall / DIN Rail mounting"
+      }
+    },
+    "SHN-650": {
+      "name": "SHN-650",
+      "mid_name": "CONVERTER",
+      "sub_name": "SHN",
+      "desc": "Programable Converter",
+      "intro": "0",
+      "spec": "2A",
+      "power": "AC,DC",
+      "option": "1P",
+      "rep_code": "",
+      "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SHN-600.pdf",
+      "catalog_url": "",
+      "price_consumer": 240000,
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            },
+            {
+              "code": "OUT1",
+              "desc": "D"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "6",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "5"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC 95~250 V (50~60 Hz) | DC 24 V",
         "소비전력": "AC : 약 4.0 VA | DC : ≤80 mA",
@@ -4116,7 +5185,102 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SHN-700.pdf",
       "catalog_url": "",
       "price_consumer": 210000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "SOURCE",
+              "desc": "A"
+            },
+            {
+              "code": "SOURCE",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            },
+            {
+              "code": "INPUT",
+              "desc": "C"
+            },
+            {
+              "code": "INPUT",
+              "desc": "D"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            },
+            {
+              "code": "OUT1",
+              "desc": "H"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "H"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "14",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC 95~250 V (50~60 Hz)",
         "소비전력": "AC : 약 4.0 VA",
@@ -4149,7 +5313,86 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SPN.pdf",
       "catalog_url": "",
       "price_consumer": 300000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            },
+            {
+              "code": "INPUT",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            },
+            {
+              "code": "OUT",
+              "desc": "F"
+            },
+            {
+              "code": "OUT",
+              "desc": "G"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            },
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC/DC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 7.0 VA | DC : ≤200 mA",
@@ -4183,7 +5426,90 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SPN.pdf",
       "catalog_url": "",
       "price_consumer": 300000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            },
+            {
+              "code": "INPUT",
+              "desc": "D"
+            },
+            {
+              "code": "INPUT",
+              "desc": "H"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            },
+            {
+              "code": "OUT",
+              "desc": "F"
+            },
+            {
+              "code": "OUT",
+              "desc": "G"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            },
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC/DC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 7.0 VA | DC : ≤200 mA",
@@ -4217,7 +5543,78 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SPN.pdf",
       "catalog_url": "",
       "price_consumer": 300000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            },
+            {
+              "code": "OUT",
+              "desc": "F"
+            },
+            {
+              "code": "OUT",
+              "desc": "G"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            },
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC/DC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 3.5 VA | DC : ≤100 mA",
@@ -4252,7 +5649,78 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SPN.pdf",
       "catalog_url": "",
       "price_consumer": 310000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            },
+            {
+              "code": "OUT",
+              "desc": "F"
+            },
+            {
+              "code": "OUT",
+              "desc": "G"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            },
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC/DC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 3.5 VA | DC : ≤100 mA",
@@ -4285,7 +5753,82 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SPN.pdf",
       "catalog_url": "",
       "price_consumer": 310000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            },
+            {
+              "code": "INPUT",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            },
+            {
+              "code": "OUT",
+              "desc": "F"
+            },
+            {
+              "code": "OUT",
+              "desc": "G"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            },
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC/DC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 7.0 VA | DC : ≤200 mA",
@@ -4318,7 +5861,78 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SPN.pdf",
       "catalog_url": "",
       "price_consumer": 310000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            },
+            {
+              "code": "OUT",
+              "desc": "F"
+            },
+            {
+              "code": "OUT",
+              "desc": "G"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC/DC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 8.0 VA | DC : ≤200 mA",
@@ -4351,7 +5965,84 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SPN.pdf",
       "catalog_url": "",
       "price_consumer": 310000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "G"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "H"
+            },
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            },
+            {
+              "code": "OUT",
+              "desc": "F"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "G"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC/DC 정격의 ±10 % (50~60 Hz)",
         "소비전력": "AC : 약 7.0 VA | DC : ≤200 mA",
@@ -4384,7 +6075,74 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 350000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            },
+            {
+              "code": "OUT",
+              "desc": "F"
+            },
+            {
+              "code": "OUT",
+              "desc": "G"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "AC 95~250 V (50~60 Hz)",
         "소비전력": "AC : 약 3.0 VA",
@@ -4420,7 +6178,80 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 190000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            },
+            {
+              "code": "INPUT",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "13",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %",
@@ -4440,7 +6271,80 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 190000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "D"
+            },
+            {
+              "code": "INPUT",
+              "desc": "H"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "D"
+            },
+            {
+              "code": "OUT1",
+              "desc": "H"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "D"
+            },
+            {
+              "code": "OUT2",
+              "desc": "H"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "13",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %",
@@ -4460,7 +6364,72 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 190000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "D"
+            },
+            {
+              "code": "OUT1",
+              "desc": "H"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "D"
+            },
+            {
+              "code": "OUT2",
+              "desc": "H"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "13",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %",
@@ -4480,7 +6449,72 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 195000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "D"
+            },
+            {
+              "code": "OUT1",
+              "desc": "H"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "D"
+            },
+            {
+              "code": "OUT2",
+              "desc": "H"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "13",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.25 %",
         "선형성": "±0.02 %",
@@ -4500,7 +6534,72 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 195000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "D"
+            },
+            {
+              "code": "OUT1",
+              "desc": "H"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "D"
+            },
+            {
+              "code": "OUT2",
+              "desc": "H"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "13",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.15 %",
         "선형성": "±0.02 %",
@@ -4520,7 +6619,76 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 195000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "D"
+            },
+            {
+              "code": "OUT1",
+              "desc": "H"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "D"
+            },
+            {
+              "code": "OUT2",
+              "desc": "H"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "13",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "V"
+            },
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %",
@@ -4540,7 +6708,40 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 165000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "A"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "13",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %",
@@ -4560,7 +6761,72 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 170000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.35 %",
         "선형성": "±0.02 %",
@@ -4580,7 +6846,72 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 170000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.35 %",
         "선형성": "±0.02 %",
@@ -4600,7 +6931,70 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SDL-ISO.pdf",
       "catalog_url": "",
       "price_consumer": 185000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            },
+            {
+              "code": "POWER",
+              "desc": "2"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %",
@@ -4620,7 +7014,66 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SDL-IPS.pdf",
       "catalog_url": "",
       "price_consumer": 185000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            },
+            {
+              "code": "POWER",
+              "desc": "2"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %",
@@ -4640,7 +7093,66 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SDL-RTD.pdf",
       "catalog_url": "",
       "price_consumer": 190000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            },
+            {
+              "code": "POWER",
+              "desc": "2"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.25 %",
         "선형성": "±0.02 %",
@@ -4660,7 +7172,66 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SDL-PMC.pdf",
       "catalog_url": "",
       "price_consumer": 190000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            },
+            {
+              "code": "POWER",
+              "desc": "2"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %",
@@ -4680,7 +7251,66 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SDL-T／C.pdf",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "T"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            },
+            {
+              "code": "POWER",
+              "desc": "2"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.35 %",
         "선형성": "±0.02 %",
@@ -4700,7 +7330,66 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 220000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.35 %",
         "선형성": "±0.02 %",
@@ -4720,7 +7409,40 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SDL-HLS.pdf",
       "catalog_url": "",
       "price_consumer": 190000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            },
+            {
+              "code": "POWER",
+              "desc": "2"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.2 %",
         "선형성": "±0.02 %",
@@ -4740,7 +7462,76 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/SD-100.pdf",
       "catalog_url": "",
       "price_consumer": 190000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            },
+            {
+              "code": "OUT",
+              "desc": "C"
+            },
+            {
+              "code": "OUT",
+              "desc": "D"
+            },
+            {
+              "code": "OUT",
+              "desc": "E"
+            },
+            {
+              "code": "OUT",
+              "desc": "F"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "13",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "2"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.35 %",
         "선형성": "±0.02 %",
@@ -4760,7 +7551,88 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/P-ISO.pdf",
       "catalog_url": "",
       "price_consumer": 155000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "7",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            },
+            {
+              "code": "INPUT",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            },
+            {
+              "code": "OUT1",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "C"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "F"
+            },
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %",
@@ -4780,7 +7652,80 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/P-IPS.pdf",
       "catalog_url": "",
       "price_consumer": 155000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "7",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            },
+            {
+              "code": "OUT1",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "C"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "F"
+            },
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %",
@@ -4800,7 +7745,64 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/P-RTD.pdf",
       "catalog_url": "",
       "price_consumer": 160000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "7",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "F"
+            },
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.25 %",
         "선형성": "±0.02 %",
@@ -4820,7 +7822,76 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Converter/P-PMC.pdf",
       "catalog_url": "",
       "price_consumer": 160000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "7",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            },
+            {
+              "code": "OUT1",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "A"
+            },
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "C"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.15 %",
         "선형성": "±0.02 %",
@@ -4840,7 +7911,26 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 130000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "A"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.25 %",
         "선형성": "±0.02 %",
@@ -4860,7 +7950,72 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 145000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "7",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            },
+            {
+              "code": "INPUT",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "B"
+            },
+            {
+              "code": "OUT1",
+              "desc": "C"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "B"
+            },
+            {
+              "code": "OUT2",
+              "desc": "C"
+            },
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.1 %"
@@ -4879,7 +8034,60 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 145000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "7",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "A"
+            },
+            {
+              "code": "OUT1",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "O"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.1 %"
@@ -4898,7 +8106,46 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 130000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %"
@@ -4917,7 +8164,46 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 130000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "Y"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %"
@@ -4936,7 +8222,26 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Indicator/SHN-1100.pdf",
       "catalog_url": "",
       "price_consumer": 90000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        }
+      ],
       "specs": {
         "디스플레이": "4 digit, 7-segment (Red)"
       }
@@ -4954,7 +8259,36 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Indicator/SHN-1300.pdf",
       "catalog_url": "",
       "price_consumer": 99000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "2"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OPTION",
+              "desc": "4"
+            },
+            {
+              "code": "OPTION",
+              "desc": "6"
+            }
+          ]
+        }
+      ],
       "specs": {
         "디스플레이": "4 digit, 7-segment (Red)"
       }
@@ -4972,7 +8306,48 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 110000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "1"
+            },
+            {
+              "code": "INPUT",
+              "desc": "2"
+            },
+            {
+              "code": "INPUT",
+              "desc": "3"
+            },
+            {
+              "code": "INPUT",
+              "desc": "5"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OPTION",
+              "desc": "4"
+            },
+            {
+              "code": "OPTION",
+              "desc": "6"
+            }
+          ]
+        }
+      ],
       "specs": {
         "디스플레이": "4 digit, 7-segment (Red)"
       }
@@ -5038,7 +8413,18 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Indicator/SHN-CAL.pdf",
       "catalog_url": "",
       "price_consumer": 485000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.1 %",
         "선형성": "±0.02 %",
@@ -5058,7 +8444,84 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Indicator/PRI-3000.pdf",
       "catalog_url": "",
       "price_consumer": 160000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "6",
+          "options": [
+            {
+              "code": "ALARM",
+              "desc": "0"
+            },
+            {
+              "code": "ALARM",
+              "desc": "2"
+            },
+            {
+              "code": "ALARM",
+              "desc": "4"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "7",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "0"
+            },
+            {
+              "code": "OUT",
+              "desc": "1"
+            },
+            {
+              "code": "OUT",
+              "desc": "2"
+            },
+            {
+              "code": "OUT",
+              "desc": "4"
+            },
+            {
+              "code": "OUT",
+              "desc": "6"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            },
+            {
+              "code": "POWER",
+              "desc": "2"
+            },
+            {
+              "code": "POWER",
+              "desc": "3"
+            }
+          ]
+        }
+      ],
       "specs": {
         "전원전압": "100~240V AC",
         "소비전력": "AC : 약 6.2 VA / 24 V DC : ≤XXX mA",
@@ -5121,7 +8584,68 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Indicator/PRI-4000.pdf",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "6",
+          "options": [
+            {
+              "code": "ALARM",
+              "desc": "0"
+            },
+            {
+              "code": "ALARM",
+              "desc": "2"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "7",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "0"
+            },
+            {
+              "code": "OUT",
+              "desc": "1"
+            },
+            {
+              "code": "OUT",
+              "desc": "2"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.2 %",
         "디스플레이": "5 digit, 7-segment (Red)"
@@ -5140,7 +8664,18 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Indicator/PRI-5000.pdf",
       "catalog_url": "",
       "price_consumer": 175000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.2 %",
         "디스플레이": "4 digit, 7-segment (Red)"
@@ -5159,7 +8694,52 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Indicator/AM-4000.pdf",
       "catalog_url": "",
       "price_consumer": 270000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "1"
+            },
+            {
+              "code": "INPUT",
+              "desc": "2"
+            },
+            {
+              "code": "INPUT",
+              "desc": "3"
+            },
+            {
+              "code": "OUT",
+              "desc": "1"
+            },
+            {
+              "code": "OUT",
+              "desc": "2"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.25 %",
         "디스플레이": "4 digit, 7-segment (Red)"
@@ -5178,7 +8758,36 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Indicator/SMI-3000.pdf",
       "catalog_url": "",
       "price_consumer": 165000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "6",
+          "options": [
+            {
+              "code": "ALARM",
+              "desc": "0"
+            },
+            {
+              "code": "ALARM",
+              "desc": "2"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "0"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.2 %",
         "디스플레이": "4 digit, 7-segment (Red)"
@@ -5197,7 +8806,72 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Indicator/SB-6000.pdf",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "5",
+          "options": [
+            {
+              "code": "ALARM",
+              "desc": "1"
+            },
+            {
+              "code": "ALARM",
+              "desc": "2"
+            },
+            {
+              "code": "ALARM",
+              "desc": "3"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "0"
+            },
+            {
+              "code": "OUT",
+              "desc": "A"
+            },
+            {
+              "code": "OUT",
+              "desc": "B"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            }
+          ]
+        }
+      ],
       "specs": {}
     },
     "SHN-ARR": {
@@ -5213,7 +8887,40 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "Un",
+              "desc": "30"
+            },
+            {
+              "code": "Un",
+              "desc": "70"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "설치방식",
+              "desc": "1R"
+            },
+            {
+              "code": "설치방식",
+              "desc": "1W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-21"
       }
@@ -5231,7 +8938,36 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 85000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "설치방식",
+              "desc": "R"
+            },
+            {
+              "code": "설치방식",
+              "desc": "W"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "Un",
+              "desc": "24V"
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-21"
       }
@@ -5249,7 +8985,22 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 85000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "설치방식",
+              "desc": "R"
+            },
+            {
+              "code": "설치방식",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-21"
       }
@@ -5267,7 +9018,22 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 85000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "설치방식",
+              "desc": "R"
+            },
+            {
+              "code": "설치방식",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-21"
       }
@@ -5285,7 +9051,22 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 85000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "설치방식",
+              "desc": "R"
+            },
+            {
+              "code": "설치방식",
+              "desc": "W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-21"
       }
@@ -5339,7 +9120,40 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "Un",
+              "desc": "125"
+            },
+            {
+              "code": "Un",
+              "desc": "250"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "설치방식",
+              "desc": "1R"
+            },
+            {
+              "code": "설치방식",
+              "desc": "1W"
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-11"
       }
@@ -5393,7 +9207,40 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Arrester/PSP-SP.pdf",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "4",
+          "options": [
+            {
+              "code": "Imax",
+              "desc": "40"
+            },
+            {
+              "code": "Imax",
+              "desc": "80"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "7",
+          "options": [
+            {
+              "code": "Un",
+              "desc": "211"
+            },
+            {
+              "code": "Un",
+              "desc": "222"
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-11"
       }
@@ -5411,7 +9258,36 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Arrester/PSP-TP.pdf",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "4",
+          "options": [
+            {
+              "code": "Imax",
+              "desc": "40"
+            },
+            {
+              "code": "Imax",
+              "desc": "80"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "7",
+          "options": [
+            {
+              "code": "Un",
+              "desc": "322"
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-11"
       }
@@ -5429,7 +9305,36 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Arrester/PSP-TP.pdf",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "4",
+          "options": [
+            {
+              "code": "Imax",
+              "desc": "40"
+            },
+            {
+              "code": "Imax",
+              "desc": "80"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "7",
+          "options": [
+            {
+              "code": "Un",
+              "desc": "422"
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-11"
       }
@@ -5447,7 +9352,18 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Arrester/PSP-SP-C.pdf",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-11"
       }
@@ -5465,7 +9381,18 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Arrester/PSP-TP-C.pdf",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-11"
       }
@@ -5483,7 +9410,18 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 110000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-11"
       }
@@ -5501,7 +9439,48 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 85000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "설치방식",
+              "desc": "Rail"
+            },
+            {
+              "code": "설치방식",
+              "desc": "Wall"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "OPTION",
+              "desc": ""
+            },
+            {
+              "code": "OPTION",
+              "desc": "-232C"
+            },
+            {
+              "code": "OPTION",
+              "desc": "-485"
+            }
+          ]
+        }
+      ],
       "specs": {
         "적용규격": "KS C IEC 61643-11"
       }
@@ -5519,7 +9498,34 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Totalizer/SHN-2000.pdf",
       "catalog_url": "",
       "price_consumer": 115000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "9",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "1"
+            },
+            {
+              "code": "INPUT",
+              "desc": "2"
+            },
+            {
+              "code": "INPUT",
+              "desc": "3"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        }
+      ],
       "specs": {
         "디스플레이": "6 digit, 7-segment (Red)"
       }
@@ -5537,7 +9543,68 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 375000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": ""
+            },
+            {
+              "code": "OUT",
+              "desc": "1"
+            },
+            {
+              "code": "OUT",
+              "desc": "2"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "71"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "OUT",
+              "desc": "0"
+            },
+            {
+              "code": "OUT",
+              "desc": "2"
+            }
+          ]
+        },
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "14",
+          "options": [
+            {
+              "code": "POWER",
+              "desc": "1"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.15 %",
         "디스플레이": "5 digit, 7-segment (Red)"
@@ -5556,7 +9623,74 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Totalizer/SHN-2700.pdf",
       "catalog_url": "",
       "price_consumer": 340000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            },
+            {
+              "code": "INPUT",
+              "desc": "1"
+            },
+            {
+              "code": "INPUT",
+              "desc": "2"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "0"
+            },
+            {
+              "code": "OUT1",
+              "desc": "1"
+            },
+            {
+              "code": "OUT1",
+              "desc": "2"
+            },
+            {
+              "code": "OUT1",
+              "desc": "3"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "0"
+            },
+            {
+              "code": "OUT2",
+              "desc": "1"
+            },
+            {
+              "code": "OUT2",
+              "desc": "2"
+            },
+            {
+              "code": "OUT2",
+              "desc": "3"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.2 %",
         "선형성": "±0.02 %",
@@ -5576,7 +9710,74 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Totalizer/SHN-2800.pdf",
       "catalog_url": "",
       "price_consumer": 400000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "10",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "0"
+            },
+            {
+              "code": "INPUT",
+              "desc": "1"
+            },
+            {
+              "code": "INPUT",
+              "desc": "2"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "11",
+          "options": [
+            {
+              "code": "OUT1",
+              "desc": "0"
+            },
+            {
+              "code": "OUT1",
+              "desc": "1"
+            },
+            {
+              "code": "OUT1",
+              "desc": "2"
+            },
+            {
+              "code": "OUT1",
+              "desc": "3"
+            }
+          ]
+        },
+        {
+          "type": "spec",
+          "name": "12",
+          "options": [
+            {
+              "code": "OUT2",
+              "desc": "0"
+            },
+            {
+              "code": "OUT2",
+              "desc": "1"
+            },
+            {
+              "code": "OUT2",
+              "desc": "2"
+            },
+            {
+              "code": "OUT2",
+              "desc": "3"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.2 %",
         "선형성": "±0.02 %",
@@ -5596,7 +9797,26 @@
       "manual_url": "http://www.shinhosystem.com/SH/Manual/Transmitter/SHT-50.pdf",
       "catalog_url": "",
       "price_consumer": 90000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "delimiter",
+          "char": "-"
+        },
+        {
+          "type": "spec",
+          "name": "8",
+          "options": [
+            {
+              "code": "INPUT",
+              "desc": "A"
+            },
+            {
+              "code": "INPUT",
+              "desc": "B"
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.3 %"
       }
@@ -5614,7 +9834,18 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 110000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "정확도": "±0.3 %"
       }
@@ -5632,7 +9863,18 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 80000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "설치방식": "Din Raill Mounting",
         "적용규격": "KS C IEC 61643-11"
@@ -5651,7 +9893,18 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 110000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "디스플레이": "녹색 (정상), 적색 (고장)",
         "설치방식": "Din Raill Mounting",
@@ -5671,7 +9924,30 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 250000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            },
+            {
+              "code": "",
+              "desc": ""
+            },
+            {
+              "code": "",
+              "desc": ""
+            },
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "디스플레이": "녹색 (정상), 적색 (고장)",
         "설치방식": "Din Raill Mounting",
@@ -5691,7 +9967,22 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            },
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "디스플레이": "녹색 (정상), 적색 (고장)",
         "설치방식": "Din Raill Mounting",
@@ -5711,7 +10002,18 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "디스플레이": "녹색 (정상), 적색 (고장)",
         "설치방식": "Din Raill Mounting",
@@ -5731,7 +10033,30 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            },
+            {
+              "code": "",
+              "desc": ""
+            },
+            {
+              "code": "",
+              "desc": ""
+            },
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "디스플레이": "녹색 (정상), 적색 (고장)",
         "설치방식": "Din Raill Mounting",
@@ -5751,7 +10076,18 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "디스플레이": "녹색 LED On/Off",
         "설치방식": "Din Raill Mounting",
@@ -5771,7 +10107,18 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "디스플레이": "Option",
         "설치방식": "Din Raill Mounting",
@@ -5791,7 +10138,18 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 0,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "설치방식": "Din Raill Mounting",
         "적용규격": "KS C IEC 61643-21"
@@ -5810,7 +10168,18 @@
       "manual_url": "",
       "catalog_url": "",
       "price_consumer": 90000,
-      "code_steps": [],
+      "code_steps": [
+        {
+          "type": "spec",
+          "name": "",
+          "options": [
+            {
+              "code": "",
+              "desc": ""
+            }
+          ]
+        }
+      ],
       "specs": {
         "설치방식": "Din Raill Mounting",
         "적용규격": "KS C IEC 61643-21"

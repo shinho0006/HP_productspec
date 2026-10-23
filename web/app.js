@@ -1102,15 +1102,12 @@
         }
 
         item.code_steps.forEach((step) => {
-            // 구분 기호 '-' 처리
+            // 구분 기호 '-' 처리 (텍스트 없이 깔끔한 실선 구분선만 표시)
             if (step.type === 'delimiter') {
                 const sepEl = document.createElement('div');
                 sepEl.className = 'spec-delimiter-row';
                 sepEl.innerHTML = `
-                    <div style="display: flex; align-items: center; gap: 10px; margin: 4px 0;">
-                        <span style="font-family: monospace; font-size: 0.85rem; font-weight: 700; color: #64748b; background: #e2e8f0; padding: 2px 10px; border-radius: 4px;">코드 구분 기호 [ - ]</span>
-                        <div style="flex: 1; height: 1px; background: #e2e8f0;"></div>
-                    </div>
+                    <div style="margin: 14px 0; height: 1px; background: #e2e8f0;"></div>
                 `;
                 codeSelectGroupsEl.appendChild(sepEl);
                 return;
